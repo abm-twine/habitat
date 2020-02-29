@@ -1,9 +1,12 @@
 import React from 'react';
+
+import { Header } from "grommet";
+import City from './City';
 import ControlPanel from './ControlPanel';
 
 import './App.css';
 
-class App extends React.Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -12,10 +15,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Header background="brand" pad="large" />
+        <City size={5}/>
         <ControlPanel className="App__ControlPanel"/> 
       </div>
     );
   }
 }
-
-export default App;

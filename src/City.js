@@ -16,7 +16,7 @@ const createGrid = size => {
   return [gridAreas, tiles];
 };
 
-const SIZE = "small";
+const SIZE = "xxsmall";
 
 const City = props => {
   let grid = createGrid(props.size);
